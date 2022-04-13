@@ -39,3 +39,9 @@ steps:
   inputs:
     ArtifactName:  sample-site
     PathtoPublish: $(build.artifactStagingDirectory)
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Website Artifact'
+  inputs:
+    ArtifactName:  sample-site
+    PathtoPublish: $(build.artifactStagingDirectory)
